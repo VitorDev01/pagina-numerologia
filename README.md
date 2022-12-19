@@ -4,12 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
     <style>
-          *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          
-          }
+      
           body {
             background: #100a1c;
             background-image:
