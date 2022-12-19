@@ -4,7 +4,12 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
     <style>
-      
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          
+          }
           body {
             background: #100a1c;
             background-image:
@@ -12,6 +17,7 @@
             radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
                  background-attachment: fixed;
             text-align: center;
+            
           }
           h1 {
             color: #fff;
@@ -69,7 +75,7 @@
             backdrop-filter: blur(5px);
             width: 350px;
             height: 750px;
-            align-items: center;
+            margin: auto;
             justify-content: space-evenly;
             border-radius: 20px;
           }
@@ -184,6 +190,7 @@
   
     </head>
     <body>
+        <br><br>
         <div class="conteiner">
         <h1>Seu Ano Pessoal Na Númerologia & Tarot</h1>
       
@@ -203,7 +210,7 @@
                 </p>
             </div>
            </div>
-           <br>
+           <br><br>
 
           <!--AnosPessoais-->
           <input type="checkbox" id="btn-a">
