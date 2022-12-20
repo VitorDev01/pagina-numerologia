@@ -3,13 +3,22 @@
         <title>Somar valores de input</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Source+Sans+Pro&display=swap');
           *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
           
           }
+          html {
+           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);     
+          }
+          
           body {
             background: #100a1c;
             background-image:
@@ -17,6 +26,7 @@
             radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
                  background-attachment: fixed;
             text-align: center;
+           
             
           }
           h1 {
@@ -24,7 +34,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font: bold 40px serif;
+            font:  30px 'Playfair Display', serif;
             border-bottom: solid 5px rgba(255, 255, 255, .15);
           }
           p {
@@ -33,13 +43,14 @@
             justify-content: center;
             text-align: center;
             margin: 5px;
-            font: bold 20px serif;
+            font:  20px 'Playfair Display', seri;
           }
           .num1, .num2 {
+            font-family: 'Playfair Display', serif;
             text-align: center;
             width: 300px;
             height: 40px;
-            font: bold 1.2rem serif;
+            font-size: 30px;
             background: rgba(255, 255, 255, .15);
             color: #fff;
             border: none;
@@ -48,33 +59,42 @@
             border-radius: 15px;
           }
           .resultado {
-            size: 20px;
+            font-size: 40px;
+            
             color: #fff;
-            font: bold 1.2rem serif;
+            font: bold 'Playfair Display', serif;
             border-radius: 15px;
+            
+            
           
           }
           button{
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
             border: none;
             width: 300px;
             height: 40px;
-            font: bold 1.2rem serif;
+            font: bold 1.2rem ;
             background: rgba(255, 255, 255, .15);
             color: #fff;
             outline: none;
             cursor: pointer;
             border-radius: 15px;
           }
+          button:hover {
+            
+          }
+           
+           
           .conteiner {
             margin: 30px;
             flex-direction: column;
             /*Efeito vidro*/
             box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-            
             background-color: rgba(255, 255, 255, .15);
             backdrop-filter: blur(5px);
             width: 350px;
-            height: 750px;
+            height: 710px;
             margin: auto;
             justify-content: space-evenly;
             border-radius: 20px;
@@ -152,7 +172,8 @@
             
           a { /*Links menu*/
             color: white;
-            font: 370 20px/1.6 "Source Sans Pro",sans-serif;
+            background:rgba(0, 0, 0, .09);
+            font: 370 20px/1.6 'Playfair Display', serif;
           }
         
           a:hover { /*cor ao tocar nos links*/
@@ -170,7 +191,7 @@
           .area p {
               text-align: center;
               margin: 10px;
-              font: bold 20px serif;
+              font:  20px  'Playfair Display', serif;
             }
 
             .area {
@@ -204,7 +225,7 @@
                 <br><br>
                 <p class="resultado"></p>
                 <br>
-                <p>Some o resultado acima até chegar a um número de 1 a 9 caso tenha 0 corte</p><b><br>
+                <p>Some o resultado acima até chegar a um número de 1 a 9 caso tenha zero corte</p><b><br>
                 <p>Observação: Seu ano pessoal começa a valer a partir da sua data de aniversário e muda no próximo.<br><br>
                 Este é um conteúdo vendido sobre demanda então caso tenha interesse entre em contato para agendar!.
                 </p>
@@ -448,6 +469,5 @@
             document.querySelector(".resultado").innerHTML = resultado;
           }
     </script>
-   
    </body>
 </html>
