@@ -29,6 +29,19 @@
            
             
           }
+          #barraNav {
+            display: table;
+            width: 100%;
+            background: black;
+         
+          }
+          #topo {
+            height: 100px;
+            background-image: url('tarot.jpg');
+            background-size: 100% 250px;
+            background-repeat: no-repeat;
+          }
+          
           h1 {
             color: #fff;
             display: flex;
@@ -60,14 +73,11 @@
           }
           .resultado {
             font-size: 40px;
-            
             color: #fff;
             font: bold 'Playfair Display', serif;
             border-radius: 15px;
-            
-            
-          
           }
+       
           button{
             font-family: 'Playfair Display', serif;
             font-size: 20px;
@@ -81,11 +91,7 @@
             cursor: pointer;
             border-radius: 15px;
           }
-          button:hover {
-            
-          }
-           
-           
+   
           .conteiner {
             margin: 30px;
             flex-direction: column;
@@ -169,7 +175,6 @@
               display: none;
             }
             
-            
           a { /*Links menu*/
             color: white;
             background:rgba(0, 0, 0, .09);
@@ -191,7 +196,7 @@
           .area p {
               text-align: center;
               margin: 10px;
-              font:  20px  'Playfair Display', serif;
+              font: bold 20px  'Playfair Display', serif;
             }
 
             .area {
@@ -205,16 +210,30 @@
              border-left-color: #DDF7F8;
              display: block;
              margin: 30px;
-             
             }
+            .rodape  { 
+              text-decoration: none; 
+              color: white; 
+              font-size: 18px; 
+              cursor: pointer; 
+              padding: 15px 10px; 
+              text-align: center; 
+              background-color: rgba(255, 255, 255, .15);
+              backdrop-filter: blur(5px);
+              font: 'Playfair Display', serif;
+              display: block;
+            }
+
     </style>
-  
     </head>
     <body>
-        <br><br>
+        <div id="topo">
+        <div id="barraNav">
+        </div>
+        </div>
+        <br>
         <div class="conteiner">
         <h1>Seu Ano Pessoal Na Númerologia & Tarot</h1>
-      
             <div class="centro">
                 <p>Dia De Nascimento:</p>
                 <input class="num1" type="number"><br>
@@ -469,5 +488,9 @@
             document.querySelector(".resultado").innerHTML = resultado;
           }
     </script>
+       <footer class="rodape" id="conteudo-completo">
+                <p>Vitor Oliveira © 2022 - Todos os direitos reservados.</p>
+            </a>
+        </footer>
    </body>
 </html>
